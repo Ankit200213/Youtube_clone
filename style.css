@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.container{
+    display: flex;
+}
+/* Nav bar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img{
+    width: 150px;
+    height: auto;
+}
+.center-nav{
+    display: flex;
+}
+
+.search_bar{
+   display: flex;
+}
+
+.search_bar input{
+    min-width: 400px;
+    padding: 10px 20px;
+    border: 0.5px solid rgb(198, 198, 198);
+}
+
+.search_bar button{
+    border: none;
+    padding: 10px 20px;
+}
+
+.mic{
+    padding: 15px;
+    background-color: rgb(242, 239, 239);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-left: 30px;
+}
+
+.mic svg{
+    width: 30px;
+}
+
+.side-nav{
+    display: flex;
+    gap: 24px;
+    place-items: center;
+    margin-right: 50px;
+
+}
+
+.tags{
+    display: flex;
+    padding: 10px 20px;
+    gap: 20px;
+    border-top: 1px  solid rgb(235, 231, 231);
+}
+
+.tag{
+    display: grid;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid rgb(22, 22, 22);
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
+.light{
+    background-color:rgb(231, 226, 226);
+    color: black;
+}
+
+/*   Side bar */
+aside{
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.side-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-icon img{
+    width: 30px;
+}
+
+.side-icon p{
+    font-size: 10px;
+    margin-top: -5px;
+}
+
+.bars{
+    margin-top: 10px;
+}
+
+.main-container{
+    width: 100%;
+}
+
+/* main section */
+
+main{
+    min-height: 100vh;
+    background-color: rgb(240, 239, 239);
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+}
+.card img{
+    width: 90%;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.avatar img{
+    width: 40px;
+    margin-top: 2px;
+}
+
+.video_detail{
+    display: flex;
+    padding-top: 10px;
+    gap: 10px;
+    
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.content h3{
+    font-size: 15px;
+}
+.channel_name{
+    font-size: 12px;
+    font-weight: bold;
+}
+.dot img{
+   width: 25px;
+   margin-top: 0px;
+   margin-left: -5px;
+}
+.content-status{
+    display: flex;
+    gap:10px ;
+    font-size: 11px;
+}
+
+
+
+@media (min-width:650px){
+    .body{
+    max-width: fit-content;
+    }
+    main{
+        min-width: fit-content;
+    }
+}
